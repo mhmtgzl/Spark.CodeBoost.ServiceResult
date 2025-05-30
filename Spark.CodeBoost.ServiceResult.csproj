@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Version>1.1.1</Version>
+		<PackageOutputPath>D:\MyProjects\SVA\SVA.ERP\Spark.Codeboost</PackageOutputPath>
+		<Description>Servis isteklerinden dönen değerlerin sarmalanıp arayüze iletilmesini sağlar.</Description>
+
+		<!-- Geliştirici ve Şirket Bilgisi -->
+		<Authors>Mehmet Güzel</Authors>
+		<!-- Geliştirici adı -->
+		<Company></Company>
+		<!-- Şirket adı -->
+		<PackageIcon>assets/logo.png</PackageIcon>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Update="assets\logo.png">
+			<Pack>True</Pack>
+			<PackagePath>assets/logo.png</PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Spark.CodeBoost.ApplicationExceptions\Spark.CodeBoost.ApplicationExceptions.csproj" />
+	</ItemGroup>
+</Project>
